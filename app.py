@@ -1,4 +1,3 @@
-import os
 class ToDoList:
     def __init__(self):
         self.tasks = []
@@ -64,6 +63,6 @@ def main():
         else:
             print("❌ Invalid choice. Try again.")
 
+
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "8000"))
-    app.run(host="0.0.0.0", port=port, debug=False)
+    main()
